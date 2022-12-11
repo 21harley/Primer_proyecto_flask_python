@@ -1,0 +1,94 @@
+:root{
+    --color-backgrount-one:rgb(20, 43, 156);
+    --color-backgrount-two:rgb(230, 204, 11);
+    --color-backgrount-three:rgb(255, 255, 255);
+    --color-text:#fff;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(rgb(20, 43, 156),rgb(13, 30, 114));
+    height: 100vh;
+}
+.container-body{
+    width: 50vh;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    color: var(--color-text);
+
+}
+.container__img{
+    max-width: 200px;
+    max-height: 200px;
+    background-color: var(--color-backgrount-one);
+    border-radius: 80%;
+    background-color: var(--color-backgrount-three);
+}
+.container-body__title{
+text-align: center;
+}
+.img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 80%;
+    animation-name: giro;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    box-shadow: 0 0 1rem 0 rgb(235, 231, 8);
+}
+
+.container-body__buttons{
+ display: flex;
+ justify-content: space-evenly;
+ width: 100%;
+}
+
+.buttons{
+    padding: 5px;
+    background: none;
+    border: none;
+    border: 1px solid var(--color-backgrount-three);
+    border-radius: 15%;
+    color: var(--color-backgrount-three);
+    cursor: pointer;
+}
+.buttons:hover{
+    background-color: var(--color-backgrount-three);
+    color: var(--color-backgrount-two);
+    border: 1px solid transparent;
+    box-shadow: 0 0 1rem 0 rgb(134, 132, 11);
+}
+.buttons:hover > svg{
+    fill: black;
+}
+@keyframes giro{
+    0%{
+      transform: rotate(0deg); 
+      box-shadow: 0 0 1rem 0 rgb(235, 231, 8);
+    }
+    50%{
+        transform: rotate(180deg); 
+        box-shadow: 0 0 5rem 0 rgb(235, 231, 8);
+    }
+    100%{
+        transform: rotate(360deg); 
+        box-shadow: 0 0 1rem 0 rgb(235, 231, 8);
+    }
+}
+
+.link-title{
+    color: var(--color-backgrount-three);
+    text-decoration: none;
+ transition: all 1s;
+}
+.link-title:hover{
+    text-decoration: underline;
+    
+}
+.container-body__title{
+    
+}
